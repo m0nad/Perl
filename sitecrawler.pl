@@ -2,7 +2,7 @@
 
 #m0nad SiteCrawler
 #using WWW::Mechanize
-#extract urls from a site by crawling him 
+#crawl the site to extract urls 
 #by m0nad [at] email.com
 use URI;
 use WWW::Mechanize;
