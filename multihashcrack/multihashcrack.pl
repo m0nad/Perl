@@ -8,6 +8,7 @@
   by m0nad at email.com
 
 Cracks multiple hash functions using a wordlist.
+
 =cut
 use warnings;use strict;
 use Digest::SHA qw(sha1_hex sha256_hex sha384_hex sha512_hex); 
