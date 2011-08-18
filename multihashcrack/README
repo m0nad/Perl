@@ -1,0 +1,43 @@
+MultHashCracker cracks multiple hash functions using a wordlist.
+by m0nad at email.com
+
+
+$ perl multihashcrack.pl
+
+              _ _   _                 _       ___               _    
+  /\/\  _   _| | |_(_) /\  /\__ _ ___| |__   / __\ __ __ _  ___| | __
+ /    \| | | | | __| |/ /_/ / _` / __| '_ \ / / | '__/ _` |/ __| |/ /
+/ /\/\ \ |_| | | |_| / __  / (_| \__ \ | | / /__| | | (_| | (__|   < 
+\/    \/\__,_|_|\__|_\/ /_/ \__,_|___/_| |_\____/_|  \__,_|\___|_|\_\
+
+  by m0nad at email.com
+
+
+options:	description:
+
+--md5           to crack md5 hash function.
+--sha1		to crack sha1 hash function.
+--sha256	to crack sha256 hash function.
+--sha384	to crack sha384 hash function.
+--sha512	to crack sha512 hash function.
+
+--verbose	to active verbose mode.
+
+usage:
+  perl multihashcrack.pl <hash function> <hash> <wordlist> 
+  perl multihashcrack.pl --sha1 a94a8fe5ccb19ba61c4c0873d391e987982fbbd2 wordlist.wl
+
+$ perl multihashcrack.pl --sha1 a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 wl 
+
+              _ _   _                 _       ___               _    
+  /\/\  _   _| | |_(_) /\  /\__ _ ___| |__   / __\ __ __ _  ___| | __
+ /    \| | | | | __| |/ /_/ / _` / __| '_ \ / / | '__/ _` |/ __| |/ /
+/ /\/\ \ |_| | | |_| / __  / (_| \__ \ | | / /__| | | (_| | (__|   < 
+\/    \/\__,_|_|\__|_\/ /_/ \__,_|___/_| |_\____/_|  \__,_|\___|_|\_\
+
+  by m0nad at email.com
+
+Hash found!!!
+a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 = test
+
+$

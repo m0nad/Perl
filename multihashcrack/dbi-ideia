@@ -1,0 +1,4 @@
+verifica se existe o hash na db 
+gera os hash da wl que nao existem na db
+verifica se os novos hash sao a senha
+adiciona os novos hashs na db
