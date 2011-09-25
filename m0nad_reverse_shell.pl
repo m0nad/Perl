@@ -15,10 +15,10 @@ sub banner
 }
 sub usage 
 { 
+  banner();
   print "usage:\n  perl $0 <host> <port>\nex:\n  perl $0 192.168.0.10 53 &\n\n"; 
   exit;
 }
-banner();
 my $host = shift;
 my $port = shift || &usage;
 
