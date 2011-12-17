@@ -23,8 +23,7 @@ foreach (@dump) {
   }
   print "\"\t//$instruction\n";
 }
-print ";";
-print "
+print ";
 int
 main()
 {
